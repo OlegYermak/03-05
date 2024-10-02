@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Поле для введення назви предмета -->
+    <EditText
+        android:id="@+id/editText_subject_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Назва предмета"
+        android:inputType="text"
+        android:layout_alignParentTop="true" />
+
+    <!-- Поле для введення коду предмета -->
+    <EditText
+        android:id="@+id/editText_subject_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Код предмета"
+        android:inputType="text"
+        android:layout_below="@id/editText_subject_name"
+        android:layout_marginTop="16dp" />
+
+    <!-- Поле для введення кількості кредитів -->
+    <EditText
+        android:id="@+id/editText_subject_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Кредити"
+        android:inputType="number"
+        android:layout_below="@id/editText_subject_code"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка для підтвердження введення -->
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/editText_subject_credits"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

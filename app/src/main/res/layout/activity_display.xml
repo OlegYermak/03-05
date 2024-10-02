@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Поле для відображення назви предмета -->
+    <TextView
+        android:id="@+id/display_subject_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject Name:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Поле для відображення коду предмета -->
+    <TextView
+        android:id="@+id/display_subject_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject Code:"
+        android:layout_below="@id/display_subject_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Поле для відображення кількості кредитів -->
+    <TextView
+        android:id="@+id/display_subject_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits:"
+        android:layout_below="@id/display_subject_code"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:layout_below="@id/display_subject_credits"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
